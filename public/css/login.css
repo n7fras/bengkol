@@ -1,0 +1,80 @@
+/* login.css */
+body {
+  background-image: url(/image/bgrn.png);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.container_login {
+  padding: 0px;
+  border-radius: 8px;
+  align-items: center;
+  top: 50px;
+  border: none;
+  width: 300px;
+  position: absolute; /* Allow absolute positioning */
+  left: 50%; /* Move it horizontally to the center */
+  transform: translateX(-50%); /* Adjust by half of the element's width */
+  top: 35%; /* Move it vertically to the center */
+  transform: translate(-50%, -50%); /* Adjust by half of the element's height */
+}
+
+.container_login h1 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 35px;
+}
+.container_login input {
+  width: 95%;
+  padding: 10px;
+  border: 1;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  color: rgb(15, 13, 13);
+  margin-bottom: 10px;
+  margin-top: 5px;
+  height: auto;
+}
+.container_login button {
+  background-color: #00a373;
+  width: 50%;
+  height: 30px;
+  cursor: pointer;
+  color: white;
+  border-radius: 100px;
+  margin-left: 25%;
+  /* box-shadow: 10px 10px 10px black; */
+}
+.container_login button:hover {
+  background-color: rgb(4, 218, 4);
+}
+/* .kotaklogin {
+  text-align: left;
+  margin-bottom: 30px;
+} */
+div label {
+  font-weight: bold;
+  font-size: 15px;
+  color: black;
+}
+
+
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 25px;
+}

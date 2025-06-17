@@ -1,0 +1,107 @@
+<style>
+    /* Styling dasar untuk container */
+/* Styling dasar untuk card */
+.card {
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Styling untuk ikon */
+.card-icon img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+/* Styling untuk teks */
+.card-content h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #002f6c;
+  margin: 0;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #6c6c6c;
+  margin: 5px 0;
+}
+
+.card-content .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #002f6c;
+  margin: 10px 0;
+}
+
+/* Deskripsi awalnya tersembunyi */
+.card-content .description {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+/* Styling untuk panah */
+.card-content .arrow {
+  font-size: 20px;
+  color: #002f6c;
+  margin-top: 10px;
+}
+
+/* Efek hover */
+.card:hover {
+  background-color: #0066cc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.card:hover .card-icon img {
+  transform: scale(1.1);
+}
+
+.card:hover .card-content h3,
+.card:hover .card-content .price,
+.card:hover .card-content .arrow {
+  color: #fff;
+}
+
+.card:hover .card-content .description {
+  opacity: 1;
+  max-height: 50px; /* Sesuaikan dengan panjang teks */
+  color: #fff;
+
+}
+.card:hover{
+    transform: rotate(360deg);
+}
+
+
+    </style>
+    
+ <div class="card">
+  <div class="card-icon">
+    <img src="https://via.placeholder.com/100" alt="Icon" />
+  </div>
+  <div class="card-content">
+    <h3>Kubernetes</h3>
+    <p class="description">Deploy dan kelola aplikasi dalam hitungan menit.</p>
+    <p>Mulai dari</p>
+    <p class="price">Rp1.157.000</p>
+    <div class="arrow">
+      <span>→</span>
+    </div>
+  </div>
+</div>
+
+    
